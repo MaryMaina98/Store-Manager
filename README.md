@@ -3,4 +3,4 @@ Store Manager is a web application that helps store owners manage sales and prod
 
 Store attendant Login credentials
 Username: 1234
-passowrd: store
+passoword: store
