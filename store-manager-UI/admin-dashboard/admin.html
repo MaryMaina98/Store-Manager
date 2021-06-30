@@ -47,7 +47,7 @@
                     <span class="tooltip">Categories</span>
                 </li>
                 <li class="list-group-item">
-                    <a href="#">
+                    <a href="./html/products.html">
                         <span class="icon"><i class="fas fa-shopping-bag"></i></span>
                         <span class="title">Products</span>
 
@@ -119,6 +119,20 @@
                
 
             </div>
+            <div class="chart-js">
+                <div class="bar-graph">
+                    <p>Percentage of Stock</p>
+                    <canvas id="bar" width="400" height="300">
+
+                    </canvas>
+                </div>
+                <div class="pie-chart">
+                    <p>Percentage of Sales</p>
+                 <canvas id="pie">
+
+                 </canvas>
+                </div>
+            </div>
         </div>
     </div>
     <div class="modal">
@@ -159,6 +173,7 @@
             <div class="logout"></div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.0/chart.min.js"></script>
     <script src="./script/admin.js"></script>
      
    

@@ -1,0 +1,99 @@
+:root{
+    --fill: rgb(5, 0, 72);
+    --yellow: #ffff00;
+    
+}
+.content-wrapper{
+    padding: 10px 40px;
+}
+.products-card{
+    box-shadow: 0 0 3px #777;
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+.product-title-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    height: 40px;
+    align-items: center;
+    /* background-color: lightgray; */
+    
+}
+.number-entries{
+    width: 20%;
+}
+.product-title-section h3{
+    color: var(--fill);
+    font-size: 20px;
+}
+.add-product-btn{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    border: none;
+    background-color: var(--fill);
+    color: var(--yellow);
+    border-radius: 5px;
+}
+/* product serach section */
+.entries{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    height: 40px;
+    align-items: center;
+    background-color: lightgray;
+}
+.search-product{
+    outline: none;
+    border: 1px solid #777;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+/* table design */
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+.table thead{
+    background-color: lightgray;
+ 
+}
+.table thead th{
+    padding: 10px 10px;
+}
+.table td{
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.table thead,
+.table td{
+    text-align: left;
+}
+.edit-product{
+    background-color: lightblue;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+.delete-product{
+    background-color: red;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+
+}

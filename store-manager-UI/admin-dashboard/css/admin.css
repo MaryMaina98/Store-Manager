@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 :root{
-    --fill: #050048;
+    --fill: rgb(5, 0, 72);
+    --yellow: #ffff00;
     
 }
 body{
@@ -111,7 +112,7 @@ body{
 }
 .side-nav ul li a:hover{
     background-color: var(--fill);
-    color: yellow;
+    color: rgb(255, 255, 0);
 }
 .side-nav ul li a i{
     height: 50px;
@@ -152,10 +153,10 @@ left: 200px;
  border-radius: 5px;
 }
 .categories{
-    border-left: 5px solid green;
+    border-left: 5px solid rgb(0, 128, 0);
 }
 .category p{
-    color: green;
+    color: #008000;
     font-size: 20px;
 }
 .products{
@@ -166,11 +167,32 @@ left: 200px;
     font-size: 20px;
 }
 .users-profile{
-    border-left: 5px solid yellow;
+    border-left: 5px solid var(--yellow);
 }
 .users p{
-    color: yellow;
+    color: var(--yellow);
     font-size: 20px;
+}
+
+/* chart JS */
+.chart-js{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+.bar-graph,
+.pie-chart{
+    box-shadow: 0 0 3px #777;
+    width: 40%;
+    
+}
+.bar-graph{
+    width: 40%;
+    padding: 10px 20px;
+}
+.pie-chart{
+    padding: 10px 100px;
 }
 
 /* Modal wrapper */
@@ -234,7 +256,7 @@ margin-bottom: 20px;
     outline: none;
     border: none;
     background-color: var(--fill);
-    color: yellow;
+    color: var(--yellow);
     border-radius: 50px;
 }
 .main-title h3{
@@ -244,6 +266,10 @@ margin-bottom: 20px;
     .nav-menu{
         width: 50%;
 
+    }
+    .main-title,
+    .layout{
+        flex-direction: column;
     }
     .content-wrapper{
         left: 0;
@@ -261,5 +287,9 @@ margin-bottom: 20px;
     }
     .content-wrapper{
         margin-left: 0;
+    }
+    /* chart js */
+    .chart-js{
+        flex-direction: column;
     }
 }
