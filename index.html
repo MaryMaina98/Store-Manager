@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/store-manager-UI/css/style.css" />
-    <link rel="stylesheet" href="/store-manager-UI/css/login.css" />
+    <link rel="stylesheet" href="/store-manager-UI/login-page/css/style.css" />
+    <link rel="stylesheet" href="/store-manager-UI/login-page/css/login.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -23,7 +23,7 @@
       <div class="wrapper">
         <div class="bg-image">
           <img
-            src="/store-manager-UI/assets/images/login.svg"
+            src="/store-manager-UI/login-page/assets/images/login.svg"
             class="img-fluid"
           />
         </div>
@@ -59,7 +59,9 @@
                 class="login-btn"
                 value="sign in"
               /> -->
-              <button class="login-btn">Sign in</button>
+              
+                <button class="login-btn"><a href="./store-manager-UI/admin-dashboard/admin.html">Sign in</a></button>
+              </a>
             </div>
             <div class="input-wrapper">
               <p>Dont have an account? <a href="signup.html">sign-up</a></p>
@@ -68,23 +70,22 @@
         </div>
       </div>
     </section>
-    <script>
+
+    <!-- <script>
       const form = document.getElementById("form");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        console.log('hey')
         const password = document.getElementById("password").value;
         console.log(password);
         const username = document.getElementById("username").value;
         console.log(username);
 
         if (password == "store" && username == "1234") {
-          console.log("1234");
-          window.location.href = "../html/login.html";
+          window.location.href = "/store-manager-UI/html/login.html";
         }
       });
-    </script>
+    </script> -->
     <!-- <script src="/store-manager-UI/script/app.js"></script> -->
   </body>
 </html>
