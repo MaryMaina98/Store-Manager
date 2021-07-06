@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="../css/admin.css" />
    <link rel="stylesheet" href="../css/products.css"/>
+   <script src="../script/users-management.js" defer></script>
 </head>
   <body>
     <nav class="navbar">
@@ -49,7 +50,7 @@
                     <span class="tooltip">Categories</span>
                 </li>
                 <li class="list-group-item">
-                    <a href="./category.html">
+                    <a href="./products.html">
                         <span class="icon"><i class="fas fa-shopping-bag"></i></span>
                         <span class="title">Products</span>
 
@@ -65,7 +66,7 @@
                     <span class="tooltip">Report</span>
                 </li>
                 <li class="list-group-item">
-                    <a href="./users-management.html">
+                    <a href="#">
                         <span class="icon"><i class="fas fa-users"></i></span>
                         <span class="title">Users</span>
 
@@ -87,7 +88,7 @@
      <div class="top-div">
         <div class="products">
             <div class="product">
-                <p>Products</p>
+                <p>Users</p>
                 <span class="number">4</span>
             </div>
             <div>
@@ -97,9 +98,9 @@
      </div>
      <div class="products-card">
          <div class="product-title-section">
-             <h3>Products</h3>
+             <h3>Users</h3>
              <div>
-                 <button class="add-product-btn">Add product</button>
+                 <button class="add-product-btn add-user">Add User</button>
              </div>
          </div>
          <div class="product-search-section">
@@ -111,7 +112,7 @@
                     <span>entries</span>
                  </div>
                  <div>
-                     <label for="search">Search</label>
+                     <label for="search">Search by username</label>
                      <input type="text" class="search-product" />
                  </div>
                  
@@ -120,8 +121,8 @@
          <table class='table'>
              <thead>
                  <th>ID</th>
-                 <th>Product Name</th>
-                 <th>Category</th>
+                 <th>Username</th>
+                 <th>User Role</th>
                  <th>Status</th>
                  <th>Edit</th>
                  <th>Delete</th>
@@ -129,9 +130,9 @@
              <tbody>
                  <tr>
                      <td data-label= 'ID'>1</td>
-                     <td data-label='Product Name'>Shirt</td>
-                     <td data-label='Category'>Clothes</td>
-                     <td data-label='Status'>Available</td>
+                     <td data-label='Username'>Christopher</td>
+                     <td data-label='User Role'>Admin</td>
+                     <td data-label='Status'>Active</td>
                      <td data-label='Edit'>
                          <button class="edit-product">Edit</button>
                      </td>
@@ -139,23 +140,24 @@
                          <button class="delete-product">Delete</button>
                      </td>
                  </tr>
-                 <tr>
-                    <td data-label= 'ID'>2</td>
-                    <td data-label='Product Name'>Chunky</td>
-                    <td data-label='Category'>Shoes</td>
-                    <td data-label='Status'>Not Available</td>
-                    <td data-label='Edit'>
-                        <button class="edit-product">Edit</button>
-                    </td>
-                    <td data-label='Delete'>
-                        <button class="delete-product">Delete</button>
-                    </td>
-                </tr>
                 <tr>
+                     <td data-label= 'ID'>2</td>
+                     <td data-label='Username'>John Doe</td>
+                     <td data-label='User Role'>user</td>
+                     <td data-label='Status'>Active</td>
+                     <td data-label='Edit'>
+                         <button class="edit-product">Edit</button>
+                     </td>
+                     <td data-label='Delete'>
+                         <button class="delete-product">Delete</button>
+                     </td>
+                 </tr>
+                
+                 <tr>
                     <td data-label= 'ID'>3</td>
-                    <td data-label='Product Name'>Necklace</td>
-                    <td data-label='Category'>Accessories</td>
-                    <td data-label='Status'>Available</td>
+                    <td data-label='Username'>Oprah</td>
+                    <td data-label='User Role'>Admin</td>
+                    <td data-label='Status'>Active</td>
                     <td data-label='Edit'>
                         <button class="edit-product">Edit</button>
                     </td>
@@ -163,11 +165,12 @@
                         <button class="delete-product">Delete</button>
                     </td>
                 </tr>
+               
                 <tr>
                     <td data-label= 'ID'>4</td>
-                    <td data-label='Product Name'>Nike</td>
-                    <td data-label='Category'>Shoes</td>
-                    <td data-label='Status'>Available</td>
+                    <td data-label='Username'>Kiana</td>
+                    <td data-label='User Role'>user</td>
+                    <td data-label='Status'>Active</td>
                     <td data-label='Edit'>
                         <button class="edit-product">Edit</button>
                     </td>
@@ -181,7 +184,7 @@
         </div>
     </div>
     <div class="modal">
-        <div class="modal-wrapper">
+        <div class="modal-wrapper" style="z-index: 100;">
             <div class="close-modal">
                 <i class="fas fa-times close-modal-icon"></i>
             </div>
@@ -218,6 +221,6 @@
             <div class="logout"></div>
         </div>
     </div>
-<script src="../script/admin.js"></script>
+
   </body>
 </html>

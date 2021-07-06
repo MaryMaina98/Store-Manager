@@ -20,6 +20,13 @@
     /* background-color: lightgray; */
     
 }
+
+.admin-profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+}
 .number-entries{
     width: 20%;
 }
