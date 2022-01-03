@@ -5,4 +5,4 @@ Store attendant Login credentials
 Username: 1234
 passoword: store
 
-https://marymaina98.github.io/Store-Manager/
+https://mainamary.github.io/Store-Manager/
