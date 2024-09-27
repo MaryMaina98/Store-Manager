@@ -22,6 +22,7 @@ body{
     height: 10vh;
     align-items: center;
     padding: 0 20px;
+    
 }
 .nav-menu{
     display: flex;
@@ -45,7 +46,12 @@ body{
     font-size: 40px;
     color: #777;
 }
-
+.admin-profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+}
 
 /* side navigation */
 .side-nav{

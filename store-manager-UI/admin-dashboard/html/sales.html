@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>Sales</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -49,7 +49,7 @@
                     <span class="tooltip">Categories</span>
                 </li>
                 <li class="list-group-item">
-                    <a href="./category.html">
+                    <a href="./products.html">
                         <span class="icon"><i class="fas fa-shopping-bag"></i></span>
                         <span class="title">Products</span>
 
@@ -57,7 +57,7 @@
                     <span class="tooltip">Products</span>
                 </li>
                 <li class="list-group-item">
-                    <a href="./sales.html">
+                    <a href="#">
                         <span class="icon"><i class="fas fa-chart-line"></i></i></span>
                         <span class="title">Sales Report</span>
 
@@ -87,7 +87,7 @@
      <div class="top-div">
         <div class="products">
             <div class="product">
-                <p>Products</p>
+                <p>Sales Order</p>
                 <span class="number">4</span>
             </div>
             <div>
@@ -97,7 +97,7 @@
      </div>
      <div class="products-card">
          <div class="product-title-section">
-             <h3>Products</h3>
+             <h3>Sales History</h3>
              <div>
                  <button class="add-product-btn">Add product</button>
              </div>
@@ -111,7 +111,7 @@
                     <span>entries</span>
                  </div>
                  <div>
-                     <label for="search">Search</label>
+                     <label for="search">Search by attendant</label>
                      <input type="text" class="search-product" />
                  </div>
                  
@@ -119,62 +119,45 @@
          </div>
          <table class='table'>
              <thead>
-                 <th>ID</th>
-                 <th>Product Name</th>
-                 <th>Category</th>
-                 <th>Status</th>
-                 <th>Edit</th>
-                 <th>Delete</th>
+                 <th>Date</th>
+                 <th>Order No</th>
+                 <th>Store attendant</th>
+                 <th>Order amount</th>
+                 <th>Profit</th>
+                 
              </thead>
              <tbody>
                  <tr>
-                     <td data-label= 'ID'>1</td>
-                     <td data-label='Product Name'>Shirt</td>
-                     <td data-label='Category'>Clothes</td>
-                     <td data-label='Status'>Available</td>
-                     <td data-label='Edit'>
-                         <button class="edit-product">Edit</button>
-                     </td>
-                     <td data-label='Delete'>
-                         <button class="delete-product">Delete</button>
-                     </td>
+                     <td data-label= 'Date'>19th March 2021 10:25AM</td>
+                     <td data-label='Order No'>3</td>
+                     <td data-label='Store attendant'>Customer 1</td>
+                     <td data-label='Order amount'>600</td>
+                     <td data-label="Profit">100</td>
+                    
                  </tr>
                  <tr>
-                    <td data-label= 'ID'>2</td>
-                    <td data-label='Product Name'>Chunky</td>
-                    <td data-label='Category'>Shoes</td>
-                    <td data-label='Status'>Not Available</td>
-                    <td data-label='Edit'>
-                        <button class="edit-product">Edit</button>
-                    </td>
-                    <td data-label='Delete'>
-                        <button class="delete-product">Delete</button>
-                    </td>
+                    <td data-label= 'Date'>19th March 2021 10:25AM</td>
+                    <td data-label='Order No'>3</td>
+                    <td data-label='Store attendant'>Customer 1</td>
+                    <td data-label='Order amount'>600</td>
+                    <td data-label="Profit">100</td>
+                   
                 </tr>
                 <tr>
-                    <td data-label= 'ID'>3</td>
-                    <td data-label='Product Name'>Necklace</td>
-                    <td data-label='Category'>Accessories</td>
-                    <td data-label='Status'>Available</td>
-                    <td data-label='Edit'>
-                        <button class="edit-product">Edit</button>
-                    </td>
-                    <td data-label='Delete'>
-                        <button class="delete-product">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-label= 'ID'>4</td>
-                    <td data-label='Product Name'>Nike</td>
-                    <td data-label='Category'>Shoes</td>
-                    <td data-label='Status'>Available</td>
-                    <td data-label='Edit'>
-                        <button class="edit-product">Edit</button>
-                    </td>
-                    <td data-label='Delete'>
-                        <button class="delete-product">Delete</button>
-                    </td>
-                </tr>
+                    <td data-label= 'Date'>19th March 2021 10:25AM</td>
+                    <td data-label='Order No'>3</td>
+                    <td data-label='Store attendant'>Customer 1</td>
+                    <td data-label='Order amount'>600</td>
+                    <td data-label="Profit">100</td>
+                   
+                    <tr>
+                        <td data-label= 'Date'>19th March 2021 10:25AM</td>
+                        <td data-label='Order No'>3</td>
+                        <td data-label='Store attendant'>Customer 1</td>
+                        <td data-label='Order amount'>600</td>
+                        <td data-label="Profit">100</td>
+                       
+                    </tr>
              </tbody>
          </table>
      </div>

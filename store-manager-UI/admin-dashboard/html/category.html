@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>Categories</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="../css/admin.css" />
    <link rel="stylesheet" href="../css/products.css"/>
+   <link rel="stylesheet" href="../css/category.css"/>
 </head>
   <body>
     <nav class="navbar">
@@ -41,7 +42,7 @@
                     <span class="tooltip">Dashboard</span>
                 </li>
                 <li class="list-group-item">
-                    <a href="./category.html">
+                    <a href="#">
                         <span class="icon"><i class="fas fa-th"></i></span>
                         <span class="title">Categories</span>
 
@@ -49,7 +50,7 @@
                     <span class="tooltip">Categories</span>
                 </li>
                 <li class="list-group-item">
-                    <a href="./category.html">
+                    <a href="./products.html">
                         <span class="icon"><i class="fas fa-shopping-bag"></i></span>
                         <span class="title">Products</span>
 
@@ -57,7 +58,7 @@
                     <span class="tooltip">Products</span>
                 </li>
                 <li class="list-group-item">
-                    <a href="./sales.html">
+                    <a href="#">
                         <span class="icon"><i class="fas fa-chart-line"></i></i></span>
                         <span class="title">Sales Report</span>
 
@@ -85,21 +86,30 @@
         </div>
         <div class="content-wrapper">
      <div class="top-div">
-        <div class="products">
-            <div class="product">
-                <p>Products</p>
-                <span class="number">4</span>
+        <div class="categories">
+            <div class="category">
+                <p>Categories</p>
+                <span class="number">3</span>
             </div>
             <div>
-                <span ><i class="fas fa-shopping-bag"></i></span>
+                <i class="fas fa-th"></i>
+            </div>
+        </div>
+        <div class="categories">
+            <div class="product">
+                <p>Available Category</p>
+                <span class="number">2</span>
+            </div>
+            <div>
+                <span ><i class="fas fa-th"></i></span>
             </div>
         </div>
      </div>
      <div class="products-card">
          <div class="product-title-section">
-             <h3>Products</h3>
+             <h3>category</h3>
              <div>
-                 <button class="add-product-btn">Add product</button>
+                 <button class="add-product-btn">Add category</button>
              </div>
          </div>
          <div class="product-search-section">
@@ -120,8 +130,7 @@
          <table class='table'>
              <thead>
                  <th>ID</th>
-                 <th>Product Name</th>
-                 <th>Category</th>
+                 <th>Category </th>
                  <th>Status</th>
                  <th>Edit</th>
                  <th>Delete</th>
@@ -129,8 +138,8 @@
              <tbody>
                  <tr>
                      <td data-label= 'ID'>1</td>
-                     <td data-label='Product Name'>Shirt</td>
                      <td data-label='Category'>Clothes</td>
+
                      <td data-label='Status'>Available</td>
                      <td data-label='Edit'>
                          <button class="edit-product">Edit</button>
@@ -141,7 +150,7 @@
                  </tr>
                  <tr>
                     <td data-label= 'ID'>2</td>
-                    <td data-label='Product Name'>Chunky</td>
+                    
                     <td data-label='Category'>Shoes</td>
                     <td data-label='Status'>Not Available</td>
                     <td data-label='Edit'>
@@ -153,7 +162,7 @@
                 </tr>
                 <tr>
                     <td data-label= 'ID'>3</td>
-                    <td data-label='Product Name'>Necklace</td>
+                    
                     <td data-label='Category'>Accessories</td>
                     <td data-label='Status'>Available</td>
                     <td data-label='Edit'>
@@ -163,18 +172,7 @@
                         <button class="delete-product">Delete</button>
                     </td>
                 </tr>
-                <tr>
-                    <td data-label= 'ID'>4</td>
-                    <td data-label='Product Name'>Nike</td>
-                    <td data-label='Category'>Shoes</td>
-                    <td data-label='Status'>Available</td>
-                    <td data-label='Edit'>
-                        <button class="edit-product">Edit</button>
-                    </td>
-                    <td data-label='Delete'>
-                        <button class="delete-product">Delete</button>
-                    </td>
-                </tr>
+              
              </tbody>
          </table>
      </div>
